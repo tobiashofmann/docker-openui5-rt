@@ -1,5 +1,5 @@
 #!/bin/bash
-for i in $(git tag -l "1.26.1");
+for i in $(git tag -l "1.25.*");
 do
   echo $i;
   git checkout $i
@@ -11,4 +11,3 @@ do
   rm -R ./target/*
   rmdir ./target
 done
-rm -R *
